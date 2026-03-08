@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Sales Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+
+<body>
+
+<h1>Sales Dashboard (Bubble Sort)</h1>
+
+<input type="file" id="csvFile">
+<button onclick="loadData()">Start</button>
+<button onclick="downloadReport()">Download Report</button>
+
+<h3 id="stepInfo"></h3>
+
+<div class="bar-container" id="bars"></div>
+
+<br>
+
+<canvas id="salesChart" width="600" height="300"></canvas>
+
+<br>
+
+<canvas id="pieChart" width="600" height="300"></canvas>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
